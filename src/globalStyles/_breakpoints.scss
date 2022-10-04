@@ -1,0 +1,36 @@
+// Sizes
+$tiny: 400px;
+$small: 600px;
+$medium: 800px;
+$large: 1000px;
+$xlarge: 1200px;
+
+@mixin media-size-tiny() {
+    @media (max-width: $tiny) {
+        @content;
+    }
+}
+
+@mixin media-size-small() {
+    @media (max-width: $small) {
+        @content;
+    }
+}
+
+@mixin media-size-medium() {
+    @media (max-width: $medium) {
+        @content;
+    }
+}
+
+@mixin media-size-large() {
+    @media (max-width: $large) {
+        @content;
+    }
+}
+
+@mixin media-size-extra-large() {
+    @media (max-width: $xlarge) {
+        @content;
+    }
+}
